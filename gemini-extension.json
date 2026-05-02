@@ -1,0 +1,16 @@
+{
+  "name": "brightdata-mcp",
+  "version": "2.9.5",
+  "description": "An MCP interface into the Bright Data toolset",
+  "mcpServers": {
+    "brightdata": {
+      "command": "node",
+      "args": [
+        "${extensionPath}${/}server.js"
+      ],
+      "env": {
+        "API_TOKEN": "${BRIGHTDATA_API_TOKEN}"
+      }
+    }
+  }
+}
